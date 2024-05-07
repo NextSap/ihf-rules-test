@@ -83,7 +83,10 @@ const TestCard = () => {
                 </Sheet>
             </CardContent>
             <CardFooter>
-                <Button onClick={() => router.push("test")}>Start test</Button>
+                <Button onClick={() => {
+                    router.refresh();
+                    router.push("test")
+                }}>Start test</Button>
             </CardFooter>
         </Card>
     );

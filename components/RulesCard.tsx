@@ -67,6 +67,7 @@ const RulesCard = () => {
             <CardFooter>
                 <Button onClick={() => {
                     if(selectedRule === "") return;
+                    router.refresh();
                     router.push(`/train/${selectedRule.charAt(0)}`);
                 }}>Start training</Button>
             </CardFooter>
