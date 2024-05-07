@@ -43,3 +43,15 @@ export const getQuestionsAmountLocalStorage = (): number => {
 
     return parseInt(questionsAmount);
 }
+
+export const setTrainingRuleLocalStorage = (rule: string) => {
+    localStorage.setItem('trainingRule', rule);
+}
+
+export const getTrainingRuleLocalStorage = (): string => {
+    const trainingRule = localStorage.getItem('trainingRule');
+    if (!trainingRule)
+        return '1. Playing court';
+
+    return trainingRule;
+}

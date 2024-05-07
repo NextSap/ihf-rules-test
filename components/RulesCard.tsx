@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React, {useEffect, useState} from 'react';
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {Button} from "@/components/ui/button";
 import {
@@ -10,6 +12,8 @@ import {
     SelectTrigger,
     SelectValue
 } from "@/components/ui/select";
+import {useRouter} from "next/navigation";
+import {getTrainingRuleLocalStorage, setTrainingRuleLocalStorage} from "@/lib/localstorage.utils";
 
 const rules = [
     "1. Playing court",
@@ -34,6 +38,11 @@ const rules = [
 ]
 
 const RulesCard = () => {
+
+    const router = useRouter();
+
+    const [selectedRule, setSelectedRule] = useState<string>("");
+
     return (
         <Card>
             <CardHeader>
@@ -41,7 +50,7 @@ const RulesCard = () => {
                 <CardDescription>Select the rule you want to train</CardDescription>
             </CardHeader>
             <CardContent className="flex justify-between items-center">
-                <Select>
+                <Select onValueChange={(value) => setSelectedRule(value)}>
                     <SelectTrigger className="w-full">
                         <SelectValue placeholder="Select a rule"/>
                     </SelectTrigger>
@@ -49,17 +58,20 @@ const RulesCard = () => {
                         <SelectGroup>
                             <SelectLabel>Rules</SelectLabel>
                             {rules.map(rule => (
-                                <SelectItem key={rule} value={String(rules.indexOf(rule))}>{rule}</SelectItem>
+                                <SelectItem key={rule} value={rule}>{rule}</SelectItem>
                             ))}
                         </SelectGroup>
                     </SelectContent>
                 </Select>
             </CardContent>
             <CardFooter>
-                <Button>Start training</Button>
+                <Button onClick={() => {
+                    if(selectedRule === "") return;
+                    router.push(`/train/${selectedRule.charAt(0)}`);
+                }}>Start training</Button>
             </CardFooter>
         </Card>
-    )
+    );
 };
 
 export default RulesCard;
