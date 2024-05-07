@@ -56,7 +56,7 @@ const TestCard = () => {
                     </SheetTrigger>
                     <SheetContent className="flex flex-col gap-6" side={"left"}>
                         <Label className="text-xl">Select the rules</Label>
-                        <div className="grid md:grid-rows-7 grid-flow-col gap-3 grid-rows-10">
+                        <div className="grid md:grid-rows-7 grid-flow-col gap-5 grid-rows-10">
                             {Object.keys(preferredRules).map((rule) => {
                                 return (
                                     <div key={rule} className="flex items-center text-end">
