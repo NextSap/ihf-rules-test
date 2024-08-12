@@ -81,7 +81,7 @@ const Test = () => {
                     </Card>
                 );
             })}
-            <Button className="w-full" onClick={() => verifyAnswers(userAnswers)}>Verify my test</Button>
+            <Button className="sticky bottom-3 w-32" onClick={() => verifyAnswers(userAnswers)}>Verify</Button>
         </div>
     );
 };

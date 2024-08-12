@@ -53,7 +53,7 @@ const Train = ({params}: { params: { id: string } }) => {
     };
 
     return (
-        <div className="flex flex-col gap-3 pt-5 m-auto w-[90%]">
+        <div className="flex flex-col relative gap-3 pt-5 m-auto w-[90%]">
             {questions.map((question) => {
                 return (
                     <Card key={question.id} id={question.id}>
@@ -80,7 +80,7 @@ const Train = ({params}: { params: { id: string } }) => {
                     </Card>
                 );
             })}
-            <Button className="w-full" onClick={() => verifyAnswers(userAnswers)}>Verify my test</Button>
+            <Button className="sticky bottom-3 w-32" onClick={() => verifyAnswers(userAnswers)}>Verify</Button>
         </div>
     );
 };
