@@ -10,7 +10,7 @@ import {notFound} from "next/navigation";
 
 const Train = ({params}: { params: { id: string } }) => {
 
-    if (Number(params.id) < 0 || Number(params.id) > 17 || isNaN(Number(params.id)))
+    if (Number(params.id) < 0 && Number(params.id) > 17 && params.id !== "SAR")
         notFound();
 
     const [questions, setQuestions] = useState<Question[]>([]);

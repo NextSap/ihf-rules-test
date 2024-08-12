@@ -13,7 +13,6 @@ import {
     SelectValue
 } from "@/components/ui/select";
 import {useRouter} from "next/navigation";
-import {getTrainingRuleLocalStorage, setTrainingRuleLocalStorage} from "@/lib/localstorage.utils";
 
 const rules = [
     "1. Playing court",
@@ -68,7 +67,7 @@ const RulesCard = () => {
                 <Button onClick={() => {
                     if(selectedRule === "") return;
                     router.refresh();
-                    router.push(`/train/${selectedRule.charAt(0)}`);
+                    router.push(`/train/${selectedRule.split(".")[0]}`);
                 }}>Start training</Button>
             </CardFooter>
         </Card>
