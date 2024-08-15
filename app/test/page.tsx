@@ -34,12 +34,27 @@ const Test = () => {
 
     const verifyAnswers = (privateUserAnswers: { [key: string]: string[] }) => {
         let score = 0;
+        let maxScore = 0;
+        let wellAnswered = 0;
         randomQuestions.forEach(question => {
+            let internalScore = 0;
             const selectedAnswers = privateUserAnswers[question.id] || [];
             const correctAnswers = Object.keys(question.answers).filter(answer => question.correct.includes(answer));
             const wrongAnswers = Object.keys(question.answers).filter(answer => !question.correct.includes(answer));
-            if (selectedAnswers.length === correctAnswers.length && selectedAnswers.every(answer => correctAnswers.includes(answer)))
-                score++;
+
+            maxScore += question.correct.length;
+            selectedAnswers.forEach(answer => {
+                if(correctAnswers.includes(answer))
+                    internalScore++;
+                else
+                    internalScore--;
+            });
+
+            internalScore > 0 ? score += internalScore : score += 0;
+
+            if (selectedAnswers.some(answer => question.correct.includes(answer)))
+                wellAnswered++;
+
 
             const cardElement = document.getElementById(question.id);
             if (cardElement) {
@@ -50,7 +65,7 @@ const Test = () => {
                 }
             }
         });
-        alert(`You answered correctly ${score} out of ${randomQuestions.length} questions.`);
+        alert(`You answered correctly ${wellAnswered} out of ${randomQuestions.length} questions.\nYour score is ${score}/${maxScore} (${((score / maxScore) * 100).toFixed(0)}%)`);
     };
 
     return (
