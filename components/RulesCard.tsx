@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {Button} from "@/components/ui/button";
 import {
@@ -13,6 +13,9 @@ import {
     SelectValue
 } from "@/components/ui/select";
 import {useRouter} from "next/navigation";
+import {
+    getTrainingRuleLocalStorage, setTrainingRuleLocalStorage
+} from "@/lib/localstorage.utils";
 
 const rules = [
     "1. Playing court",
@@ -42,6 +45,10 @@ const RulesCard = () => {
 
     const [selectedRule, setSelectedRule] = useState<string>("");
 
+    useEffect(() => {
+        setSelectedRule(getTrainingRuleLocalStorage());
+    }, []);
+
     return (
         <Card>
             <CardHeader>
@@ -49,7 +56,7 @@ const RulesCard = () => {
                 <CardDescription>Select the rule you want to train</CardDescription>
             </CardHeader>
             <CardContent className="flex justify-between items-center">
-                <Select onValueChange={(value) => setSelectedRule(value)}>
+                <Select value={selectedRule} onValueChange={(value) => setSelectedRule(value)}>
                     <SelectTrigger className="w-full">
                         <SelectValue placeholder="Select a rule"/>
                     </SelectTrigger>
@@ -67,6 +74,7 @@ const RulesCard = () => {
                 <Button onClick={() => {
                     if(selectedRule === "") return;
                     router.refresh();
+                    setTrainingRuleLocalStorage(selectedRule);
                     router.push(`/train/${selectedRule.split(".")[0]}`);
                 }}>Start training</Button>
             </CardFooter>
