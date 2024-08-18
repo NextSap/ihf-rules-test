@@ -52,7 +52,7 @@ const Test = () => {
 
             internalScore > 0 ? score += internalScore : score += 0;
 
-            if (selectedAnswers.some(answer => question.correct.includes(answer)))
+            if (selectedAnswers.length === correctAnswers.length && selectedAnswers.every(answer => correctAnswers.includes(answer)))
                 wellAnswered++;
 
 
