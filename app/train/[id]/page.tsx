@@ -7,6 +7,7 @@ import {Checkbox} from "@/components/ui/checkbox";
 import {Button} from "@/components/ui/button";
 import {getQuestions, Question} from "@/lib/questions.utils";
 import {notFound} from "next/navigation";
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const Train = ({params}: { params: { id: string } }) => {
 
@@ -72,8 +73,22 @@ const Train = ({params}: { params: { id: string } }) => {
             {questions.map((question) => {
                 return (
                     <Card key={question.id} id={question.id}>
-                        <CardHeader>
+                        <CardHeader className="flex flex-row justify-between items-start gap-5">
                             {question.question}
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        ℹ️
+                                    </TooltipTrigger>
+                                    <TooltipContent className="flex flex-col">
+                                        {question.correct.map((answer, index) => (
+                                            <div key={index} className="flex items-center gap-1">
+                                                - {question.answers[answer]}
+                                            </div>
+                                        ))}
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         </CardHeader>
                         <CardContent>
                             <div className="flex flex-col gap-1">
