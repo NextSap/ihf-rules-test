@@ -7,6 +7,7 @@ import {getRandomQuestions, Question} from "@/lib/questions.utils";
 import {Checkbox} from "@/components/ui/checkbox";
 import {Label} from "@/components/ui/label";
 import {Button} from "@/components/ui/button";
+import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover";
 
 const Test = () => {
 
@@ -73,8 +74,20 @@ const Test = () => {
             {randomQuestions.map((question) => {
                 return (
                     <Card key={question.id} id={question.id}>
-                        <CardHeader>
+                        <CardHeader className="flex flex-row justify-between items-start gap-5">
                             {question.question}
+                            <Popover>
+                                <PopoverTrigger>
+                                    ℹ️
+                                </PopoverTrigger>
+                                <PopoverContent className="flex flex-col">
+                                    {question.correct.map((answer, index) => (
+                                        <div key={index} className="flex items-center gap-1">
+                                            - {question.answers[answer]}
+                                        </div>
+                                    ))}
+                                </PopoverContent>
+                            </Popover>
                         </CardHeader>
                         <CardContent>
                             <div className="flex flex-col gap-1">
