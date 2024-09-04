@@ -75,7 +75,7 @@ const Test = () => {
                 return (
                     <Card key={question.id} id={question.id}>
                         <CardHeader className="flex flex-row justify-between items-start gap-5">
-                            {question.question}
+                            {question.id}. {question.question}
                             <Popover>
                                 <PopoverTrigger>
                                     ℹ️

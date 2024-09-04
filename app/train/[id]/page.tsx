@@ -74,19 +74,19 @@ const Train = ({params}: { params: { id: string } }) => {
                 return (
                     <Card key={question.id} id={question.id}>
                         <CardHeader className="flex flex-row justify-between items-start gap-5">
-                            {question.question}
+                            {question.id}. {question.question}
                             <Popover>
-                                    <PopoverTrigger>
-                                        ℹ️
-                                    </PopoverTrigger>
-                                    <PopoverContent className="flex flex-col">
-                                        <p className="font-bold">{question.id}</p>
-                                        {question.correct.map((answer, index) => (
-                                            <p key={index} className="flex items-center gap-1 break-words">
-                                                - {question.answers[answer]}
-                                            </p>
-                                        ))}
-                                    </PopoverContent>
+                                <PopoverTrigger>
+                                    ℹ️
+                                </PopoverTrigger>
+                                <PopoverContent className="flex flex-col">
+                                    <p className="font-bold">{question.id}</p>
+                                    {question.correct.map((answer, index) => (
+                                        <p key={index} className="flex items-center gap-1 break-words">
+                                            - {question.answers[answer]}
+                                        </p>
+                                    ))}
+                                </PopoverContent>
                             </Popover>
                         </CardHeader>
                         <CardContent>
