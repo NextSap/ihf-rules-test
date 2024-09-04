@@ -81,6 +81,7 @@ const Test = () => {
                                     ℹ️
                                 </PopoverTrigger>
                                 <PopoverContent className="flex flex-col">
+                                    <p className="font-bold">{question.id}</p>
                                     {question.correct.map((answer, index) => (
                                         <p key={index} className="flex items-center gap-1 break-words">
                                             - {question.answers[answer]}
