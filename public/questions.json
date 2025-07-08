@@ -540,7 +540,7 @@
         "correct": [
           "a",
           "b",
-          "e"
+          "c"
         ]
       },
       {
@@ -856,6 +856,47 @@
         },
         "correct": [
           "a","c"
+        ]
+      },
+      {
+        "id": "2.55",
+        "question": "(Electronic team time-out is used in the game). WHITE team are in attack, and the score is 31:31. With 20 seconds left in the match, WHITE 7 scores a goal. Official A from BLACK team runs to the timekeeper’s table to push the buzzer to request a team time-out. Before official A is able to push the buzzer, BLACK 10 gets up from the bench and pushes the buzzer just before BLACK team execute the throw-off. What is the correct decision?",
+        "answers": {
+          "a": "Team time-out for BLACK team.",
+          "b": "No team time-out for BLACK team.",
+          "c": "The game is restarted with a throw-off for BLACK team.",
+          "d": "The game is restarted with a free throw for WHITE team.",
+          "e": "The game is restarted with a 7-metre throw for WHITE team.",
+          "f": "Official A from WHITE team can choose between 7-metre throw and free throw.",
+          "g": "Progressive punishment for official A from BLACK team.",
+          "h": "2-minute suspension for BLACK 10.",
+          "i": "Disqualification without written report for BLACK 10 (red card shown by the referees).",
+          "j": "BLACK team will lose one team time-out."
+        },
+        "correct": [
+          "b","c","h","j"
+        ]
+      },
+      {
+        "id": "2.56",
+        "question": "It is possible to use the video replay in this match, and an electronic team time-out system is in use. With 20 seconds left of the match WHITE 7 runs with the ball in his hands. The referees whistle steps against WHITE 7. WHITE 7 holds on to the ball for 2 seconds before putting it on the floor. Just as BLACK 4 picks up the ball, official B of BLACK team presses the buzzer to request a TTO. The referees decide to use the VR to check a possible violation of rule 8:11a. During the VR review, they see that WHITE 7 only took three steps. What is the correct decision?",
+        "answers": {
+          "a": "It is okay to use the video replay.",
+          "b": "Team time-out starts immediately for BLACK team.",
+          "c": "Decision about team time-out is postponed until after VR.",
+          "d": "Time-out.",
+          "e": "After VR, team time-out for BLACK team.",
+          "f": "After VR, no team time-out for BLACK team.",
+          "g": "Disqualification without written report for WHITE 7 (red card shown by the referees).",
+          "h": "2-minute suspension for WHITE 7.",
+          "i": "The match is restarted with a free throw for BLACK team.",
+          "j": "The match is restarted with a 7-metre throw for BLACK team.",
+          "k": "The match is restarted with a free throw for WHITE team.",
+          "l": "BLACK team will lose one team time-out",
+          "m": "Progressive punishment for official B of BLACK team"
+        },
+        "correct": [
+          "a","c","d","f","k"
         ]
       }
     ],
@@ -1202,7 +1243,7 @@
           "d": "Wait until the chance of scoring has passed, then suspension for BLACK 3 and an appropriate throw according to the situation"
         },
         "correct": [
-          "b"
+          "d"
         ]
       },
       {
@@ -1284,7 +1325,8 @@
           "a": "2-minute suspension for BLACK 11",
           "b": "Disqualification for BLACK 11, written report (red and blue cards shown by the referees)",
           "c": "Free throw for WHITE team",
-          "d": "7-metre throw for WHITE team"
+          "d": "7-metre throw for WHITE team",
+          "e": "The timekeeper can wait until the clear chance of scoring is over before blowing the whistle for the faulty substitution"
         },
         "correct": [
           "a",
@@ -1765,18 +1807,41 @@
       },
       {
         "id": "4.61",
-        "question": "The score is 29:29 with 10 seconds left in the match. Goalkeeper WHITE 12 executes a goalkeeper throw and passes the ball to WHITE 11. WHITE 11 sees that WHITE 9 is in a free position at the goal-area line of BLACK team. He passes the ball to WHITE 9. Before WHITE 9 takes a shot on goal, the timekeeper interrupts the game because of a faulty substitution. BLACK 2 has entered the court before BLACK 4 has left it. What is the correct decision?",
+        "question": "The score is 29:29 with 10 seconds left in the match. Goalkeeper WHITE 12 executes a goalkeeper throw and passes the ball to WHITE 11. WHITE 11 sees that WHITE 9 is in a free position at the goal-area line of BLACK team. He passes the ball to WHITE 9. Before WHITE 9 takes a shot on goal, the delegate interrupts the game because of a faulty substitution. BLACK 2 has entered the court before BLACK 4 has left it. What is the correct decision?",
         "answers": {
           "a": "Time-out",
           "b": "Free throw for WHITE team",
           "c": "7-metre throw for WHITE team",
           "d": "2-minute suspension for BLACK 2",
-          "e": "Disqualification for BLACK 2 (red card shown by the referees)   "
+          "e": "Disqualification for BLACK 2 (red card shown by the referees)",
+          "f": "The delegate should have waited until the clear chance of scoring was over before interrupting the game"
         },
         "correct": [
           "a",
           "c",
-          "d"
+          "d",
+          "f"
+        ]
+      },
+      {
+        "id": "4.62",
+        "question": "It is possible to use the video replay in this match. WHITE team is in a counterattack. WHITE 7 has the ball at the centre line. In that moment BLACK 9 enters the court as an additional player. WHITE 7 plays the ball to WHITE 11 who has a clear chance of scoring. At that moment the delegate whistles because of the additional player on the court. What is the correct decision?",
+        "answers": {
+          "a": "Use the video replay to see who entered the court as an additional player and to see when the player entered.",
+          "b": "2-minute suspension for BLACK 9",
+          "c": "Time-out",
+          "d": "Disqualification without written report for BLACK 9 (red card is shown by the referees)",
+          "e": "Disqualification with written report for BLACK 9 (red and blue cards are shown by the referees)",
+          "f": "Free throw for WHITE team",
+          "g": "7-metre throw for WHITE team",
+          "h": "The delegate should have waited until the clear chance of scoring was over before interrupting the game"
+        },
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "g",
+          "h"
         ]
       }
     ],
@@ -1815,7 +1880,7 @@
           "c": "Goalkeeper throw for WHITE team after whistle signal"
         },
         "correct": [
-          "c"
+          "b"
         ]
       },
       {
@@ -1880,7 +1945,7 @@
           "d": "Correction and goalkeeper throw after whistle signal"
         },
         "correct": [
-          "d"
+          "b"
         ]
       },
       {
@@ -2265,18 +2330,40 @@
         "answers": {
           "a": "Free throw for BLACK team",
           "b": "7-metre throw for BLACK team",
-          "c": "Direct 2-minute suspension for WHITE 10"
+          "c": "Direct 2-minute suspension for WHITE 10",
+          "d": "No punishment"
         },
         "correct": [
           "b",
           "c"
+        ]
+      },
+      {
+        "id": "6.25",
+        "question": "BLACK 5 takes a shot on goal. Goalkeeper WHITE 12 saves the ball. During the save, WHITE 12 hits his head against the goalpost and falls to the floor injured. BLACK 3 catches the rebound from the goalkeeper’s save and has a clear chance of scoring at the goal-area line of WHITE team. What is the correct decision?",
+        "answers": {
+          "a": "Advantage for BLACK 3.",
+          "b": "Interrupt the match immediately.",
+          "c": "The match is restarted with a 7-metre throw for BLACK team.",
+          "d": "The match is restarted with a free throw for BLACK team.",
+          "e": "Time-out",
+          "f": "The referees may give permission for two persons from BLACK team to enter the court to give medical treatment for WHITE 12.",
+          "g": "After receiving medical treatment, WHITE 12 must leave the court and can only re-enter following the third attack of his team.",
+          "h": "After receiving medical treatment, WHITE 12 can continue playing without leaving the court."
+        },
+        "correct": [
+          "b",
+          "d",
+          "e",
+          "f",
+          "g"
         ]
       }
     ],
     "7": [
       {
         "id": "7.1",
-        "question": "The ball is in the air going towards the sideline. WHITE 3 manages to play the ball with his hand to WHITE 7 before the ball crosses the line. In order to do this, WHITE 3 crosses the sideline with one foot. WHITE 7 catches the ball and scores a goal. Correct decision?",
+        "question": "The ball is in the air going towards the sideline. WHITE 3 manages to play the ball with his hand to WHITE 7 before the ball crosses the line. While doing this, WHITE 3 crosses the sideline with one foot. WHITE 7 catches the ball and scores a goal. Correct decision?",
         "answers": {
           "a": "Throw-in for BLACK team",
           "b": "Free throw for BLACK team",
@@ -2712,7 +2799,7 @@
         "id": "7.34",
         "question": "BLACK team are in attack. The referees show the forewarning signal. BLACK 7 passes the ball to BLACK 11. BLACK 11 tries to break through, but is stopped by WHITE 3. The referees give a free throw for BLACK team. BLACK 11 executes the free throw and passes the ball to BLACK 2, who tries to take a shot on goal, but the shot is blocked by defender WHITE 4, and the ball goes to BLACK 11. BLACK 11 takes a shot on goal, but he is pushed lightly by WHITE 5, and goalkeeper WHITE 1 manages to save the shot. What is the correct decision?",
         "answers": {
-          "a": "Free throw for BLACK team; new attack, because BLACK team manage to get possession of the ball after a shot on goal.",
+          "a": "Free throw for BLACK team; new normal build-up phase, because BLACK team manage to get possession of the ball after a shot on goal.",
           "b": "Free throw for BLACK team; forewarning signal, BLACK team have used two passes.",
           "c": "Free throw for BLACK team; forewarning signal, BLACK team have used three passes.",
           "d": "Free throw for BLACK team; forewarning signal, BLACK team have used four passes."
@@ -2949,7 +3036,8 @@
           "c": "7-metre throw for WHITE team",
           "d": "Disqualification of team official C from BLACK team without written report (red card shown by the referees)",
           "e": "Disqualification of team official C from BLACK team, written report (red and blue cards shown by the referees)",
-          "f": "BLACK team reduced by 1 player on the court for 2 minutes"
+          "f": "BLACK team reduced by 1 player on the court for 2 minutes",
+          "g": "The Delegate or the referees have the possibility to play the advantage and whistle for the infraction when the clear chance of scoring is over"
         },
         "correct": [
           "a",
@@ -2960,7 +3048,7 @@
       },
       {
         "id": "8.15",
-        "question": "WHITE team is counter-attacking. WHITE 5 wants to play the ball to WHITE 7, who is all alone at the goal-area line of BLACK team. When WHITE 5 passes the ball, team official D from BLACK team runs onto the court and catches the ball. Correct decision?",
+        "question": "WHITE team is in a counterattack. WHITE 5 wants to play the ball to WHITE 7, who is all alone at the goal-area line of BLACK team. When WHITE 5 passes the ball, team official D from BLACK team runs onto the court and catches the ball. Correct decision?",
         "answers": {
           "a": "Free throw for WHITE team",
           "b": "7-metre throw for WHITE team",
@@ -3531,11 +3619,13 @@
           "b": "2-minute suspension for BLACK 7",
           "c": "Free throw for WHITE team",
           "d": "7-metre throw for WHITE team",
-          "e": "Goalkeeper throw for BLACK team"
+          "e": "Goalkeeper throw for BLACK team",
+          "f": "The delegate should have waited until the clear chance of scoring was over before interrupting the game"
         },
         "correct": [
           "a",
-          "c"
+          "c",
+          "f"
         ]
       },
       {
@@ -3546,11 +3636,13 @@
           "b": "2-minute suspension for BLACK 7",
           "c": "Free throw for WHITE team",
           "d": "7-metre throw for WHITE team",
-          "e": "Goal for WHITE team"
+          "e": "Goal for WHITE team",
+          "f": "The delegate should have waited until the clear chance of scoring was over before interrupting the game"
         },
         "correct": [
           "a",
-          "d"
+          "d",
+          "f"
         ]
       },
       {
@@ -3929,7 +4021,7 @@
           "d": "Free throw for WHITE team."
         },
         "correct": [
-          "c"
+          "a","b","e"
         ]
       },
       {
@@ -3945,7 +4037,38 @@
           "g": "After receiving medical assistance WHITE 1 must leave the court and can only re-enter after his team completed 3 attacks."
         },
         "correct": [
-          "a","b","c","f"
+          "a","b","f"
+        ]
+      },
+      {
+        "id": "8.80",
+        "question": "With 10 seconds left in the match, BLACK team are in attack. While the ball is in play, BLACK 10 intentionally hits WHITE 7 in the face with his elbow. WHITE 7 falls to the floor and lies there injured. What is the correct decision?",
+        "answers": {
+          "a": "Disqualification without written report for BLACK 10 (red card shown by the referees).",
+          "b": "Disqualification with written report for BLACK 10 (red and blue cards shown by the referees).",
+          "c": "Time-out",
+          "d": "The game is restarted with a free throw for WHITE team.",
+          "e": "The game is restarted with a 7-metre throw for WHITE team.",
+          "f": "The referees may give permission for two persons from WHITE team to enter the court to assist WHITE 7.",
+          "g": "After receiving medical care on the court, WHITE 7 must leave the court and can only re-enter following the third attack of his team."
+        },
+        "correct": [
+          "b","c","d","f"
+        ]
+      },
+      {
+        "id": "8.81",
+        "question": "WHITE team play with empty goal. BLACK 7 intercepts a pass and takes a shot at the empty goal. WHITE 4 catches the ball while he is running just outside the goal area. He is not able to stop and enters the goal area with both feet and the ball in his hands. What is the correct decision?",
+        "answers": {
+          "a": "Free throw for BLACK team",
+          "b": "7-metre throw for BLACK team",
+          "c": "Progressive punishment for WHITE 4",
+          "d": "2-minute suspension for WHITE 4",
+          "e": "No punishment",
+          "f": "Time-out"
+        },
+        "correct": [
+          "a","e"
         ]
       }
     ],
@@ -4198,15 +4321,16 @@
           "a": "Goal for BLACK team",
           "b": "Free throw for WHITE team",
           "c": "Correction, new throw-off for BLACK team after whistle signal from the referees",
-          "d": "The throw is executed correctly as the referees have approved the position of the thrower by giving the whistle signal for the execution."
+          "d": "The throw is executed correctly as the referees have approved the position of the thrower by giving the whistle signal for the execution.",
+          "e": "The referees should have waited until the thrower was inside the throw-off area with the ball and all his body before giving the whistle signal for the execution of the throw-off"
         },
         "correct": [
-          "b"
+          "a","d","e"
         ]
       },
       {
         "id": "10.10",
-        "question": "(With throw-off area) BLACK team want to execute a fast throw-off from the throw-off area. At the same time as BLACK 8 is running with one foot and the ball completely inside the throw-off area, WHITE 7 is also inside the throw-off area, running in the direction of his own goal. With no teammates in the direction of WHITE 7, BLACK 8 throws the ball into the back of WHITE 7. WHITE 7 is inside the throw-off area, when the ball hits him. What is the correct decision?",
+        "question": "(With throw-off area) BLACK team want to execute a fast throw-off from the throw-off area. At the same time as BLACK 8 is running with his body and the ball completely inside the throw-off area, WHITE 7 is also inside the throw-off area, running in the direction of his own goal. With no teammates in the direction of WHITE 7, BLACK 8 throws the ball into the back of WHITE 7. WHITE 7 is inside the throw-off area, when the ball hits him. What is the correct decision?",
         "answers": {
           "a": "Free throw for WHITE team",
           "b": "Free throw for BLACK team",
@@ -4235,7 +4359,7 @@
       },
       {
         "id": "10.12",
-        "question": "(With throw-off area) WHITE team plays with 7 court players and scores a goal. BLACK team wants to execute a fast throw-off. BLACK 6 has one foot and the ball inside the throw-off area. The referees whistle for the execution. WHITE 8 clearly enters the throw-off area with active arms trying to block the ball and interferes with the execution. Even so, BLACK 6 who has his entire body and the ball inside the throw-off area executes the throw-off as a shot at the empty goal. The ball crosses the outer goal line. What is the correct decision?",
+        "question": "(With throw-off area) WHITE team plays with 7 court players and scores a goal. BLACK team wants to execute a fast throw-off. BLACK 6 is inside the throw-off area with his entire body and the ball. The referees whistle for the execution. WHITE 8 clearly enters the throw-off area with active arms trying to block the ball and interferes with the execution. Even so, BLACK 6 who has his entire body and the ball inside the throw-off area executes the throw-off as a shot at the empty goal. The ball crosses the outer goal line. What is the correct decision?",
         "answers": {
           "a": "Goalkeeper throw for WHITE team.",
           "b": "New throw-off after whistle signal.",
@@ -4271,10 +4395,11 @@
           "a": "When the thrower has at least one foot and the ball inside the throw-off area, and the other foot is not outside the throw-off area on the opponent’s half of the court.",
           "b": "When the thrower has at least one foot inside the throw-off area, and the other foot is not outside the throw-off area on the opponent’s half of the court, but the ball is still outside the throw-off area.",
           "c": "When the thrower has at least one foot and the ball inside the throw-off area, and the other foot is outside the throw-off area on the opponent’s half.",
-          "d": "When the thrower has at least one foot and the ball inside the throw-off area, the other foot is not outside the throw-off area on the opponent’s half of the court, but teammates of the thrower are inside the throw-off area on the opponent’s half of the court."
+          "d": "When the thrower has at least one foot and the ball inside the throw-off area, the other foot is not outside the throw-off area on the opponent’s half of the court, but teammates of the thrower are inside the throw-off area on the opponent’s half of the court.",
+          "e": "When the thrower is inside the throw-off area with his entire body and the ball."
         },
         "correct": [
-          "a","d"
+          "e"
         ]
       }
     ],
@@ -4741,7 +4866,7 @@
       },
       {
         "id": "14.2",
-        "question": "There is a throw-in for BLACK team. BLACK 7 executes the throw-in correctly and notices that goalkeeper WHITE 12 is standing far in front of his goal. BLACK 7 throws the ball directly in the direction of the empty goal. Court player WHITE 3 enters the goal area to stop the ball. Correct decision?",
+        "question": "There is a throw-in for BLACK team. BLACK 7 executes the throw-in correctly and notices that goalkeeper WHITE 12 is standing outside his goal area. BLACK 7 throws the ball directly in the direction of the empty goal. Court player WHITE 3 enters the goal area and stops the ball. Correct decision?",
         "answers": {
           "a": "Goal",
           "b": "Free throw for BLACK team",
@@ -4767,7 +4892,7 @@
       },
       {
         "id": "14.4",
-        "question": "WHITE 3 moves around BLACK 4 at the free-throw line of BLACK team. After taking three steps, he wants to take a shot on goal, but is pushed by BLACK 4. Immediately after taking a fourth step he scores a nice goal. No other player from BLACK team would have been able to intervene. Correct decision?",
+        "question": "WHITE 3 moves around BLACK 4 at the free-throw line of BLACK team. After taking three steps, he wants to take a shot on goal, but is pushed by BLACK 4. Immediately after taking a fourth step, he scores a nice goal. No other player from BLACK team would have been able to intervene. Correct decision?",
         "answers": {
           "a": "Advantage and therefore goal for WHITE team",
           "b": "Progressive punishment against BLACK 4",
@@ -4874,7 +4999,7 @@
       },
       {
         "id": "14.12",
-        "question": "WHITE 3 is in possession of the ball, running towards the goal of BLACK team in a counterattack resulting in a clear chance of scoring. While he executes a jump shot, there is a whistle signal from a spectator that distracts WHITE 3, so that he does not take a shot on goal. Instead he stops with the ball in the goal area. Correct decision?",
+        "question": "WHITE 3 is in possession of the ball, running towards the goal of BLACK team in a counterattack resulting in a clear chance of scoring. While he executes a jump shot, there is a whistle signal from a spectator that distracts WHITE 3, so that he does not take a shot on goal. Instead, he stops with the ball in the goal area. Correct decision?",
         "answers": {
           "a": "Free throw for BLACK team after whistle signal",
           "b": "7-metre throw for WHITE team",
@@ -5024,6 +5149,7 @@
           "f": "Direct 2-minute suspension for WHITE 4"
         },
         "correct": [
+          "b",
           "e",
           "f"
         ]
@@ -5043,6 +5169,21 @@
           "b",
           "d",
           "f"
+        ]
+      },
+      {
+        "id": "14.24",
+        "question": "WHITE team are playing without a goalkeeper. BLACK 9 intercepts a pass and takes a shot on the empty goal. WHITE 4 jumps from outside the goal area, and – while in the air over the goal area – catches the ball and lands inside the goal area with the ball in his hands. What is the correct decision?",
+        "answers": {
+          "a": "Free throw for BLACK team.",
+          "b": "7-metre throw for BLACK team.",
+          "c": "No punishment for WHITE 4.",
+          "d": "Yellow card for WHITE 4.",
+          "e": "2-minute suspension for WHITE 4."
+        },
+        "correct": [
+          "b",
+          "e"
         ]
       }
     ],
@@ -5388,6 +5529,21 @@
         "correct": [
           "b"
         ]
+      },
+      {
+        "id": "15.27",
+        "question": "BLACK team score a goal. The referees whistle for the subsequent throw-off. Before the ball has left the hand of the thrower, there is a whistle signal from the timekeeper. WHITE 5 has entered the court before WHITE 6 has left the court. What is the correct decision?",
+        "answers": {
+          "a": "Time-out.",
+          "b": "2-minute suspension for WHITE 5.",
+          "c": "2-minute suspension for WHITE 6.",
+          "d": "Since the ball was out of play at the moment of the whistle the match is restarted with a throw-off for WHITE team.",
+          "e": "The match is restarted with a free throw for BLACK team.",
+          "f": "The match is restarted with a free throw for WHITE team."
+        },
+        "correct": [
+          "a","b","e"
+        ]
       }
     ],
     "16": [
@@ -5405,7 +5561,7 @@
       },
       {
         "id": "16.2",
-        "question": "WHITE 8 receives a 2-minute suspension, as he has pushed an opponent. He approaches the referee to insult him with the following words: “You are stupid, you are an idiot, you will never learn!” Before leaving the court he spits in the referees face. Correct decision?",
+        "question": "WHITE 8 receives a 2-minute suspension, as he has pushed an opponent. He approaches the referee to insult him with the following words: “You are stupid, you are an idiot, you will never learn!” Before leaving the court he spits in the referee's face. Correct decision?",
         "answers": {
           "a": "Disqualification of WHITE 8, WHITE team is reduced by 1 player on the court for 2 minutes (red card shown by the referees)",
           "b": "Disqualification of WHITE 8, WHITE team is reduced by 2 players on the court for 2 minutes (red card shown by the referees)",
@@ -5709,6 +5865,39 @@
         "correct": [
           "d"
         ]
+      },
+      {
+        "id": "16.24",
+        "question": "BLACK 11 scores a goal. While shooting, he is pushed from the side by WHITE 10, so that he partially loses body control. The referees give a 2-minute suspension for WHITE 10. WHITE 10 leaves the court. The referees give the signal for the subsequent throw-off, and before the throw is executed, WHITE 9 enters the court as an additional player. The delegate whistles and the clock is stopped. The public clock shows 1 minute and 58 seconds left of the suspension for WHITE 10. What is the correct decision?",
+        "answers": {
+          "a": "2-minute suspension for WHITE 9.",
+          "b": "WHITE team is reduced by two players on the court for 2 minutes.",
+          "c": "For 1 minute and 58 seconds WHITE team is reduced by two players on the court. After 1 minute and 58 seconds the first suspension lapses and WHITE team is reduced by one player on the court for another 2 seconds.",
+          "d": "The game is restarted with a throw-off for WHITE team.",
+          "e": "The game is restarted with a free throw for BLACK team.",
+          "f": "Time-out."
+        },
+        "correct": [
+          "a","c","e","f"
+        ]
+      },
+      {
+        "id": "16.25",
+        "question": "WHITE team are in possession of the ball, and the ball is in play. Official B from WHITE team complains about a missing suspension for BLACK team. The delegate interrupts the game and official B is given a yellow card. Because of this punishment and before the game is restarted, he complains again, and the referees give him a 2-minute suspension. Official B then calls the referee an “idiot”. What is the correct decision?",
+        "answers": {
+          "a": "WHITE team is reduced by one player on the court for 4 minutes.",
+          "b": "WHITE team is reduced by two players on the court for 2 minutes.",
+          "c": "WHITE team is reduced by one player on the court for 2 minutes.",
+          "d": "Disqualification without written report for official B from WHITE team (red card shown by the referees).",
+          "e": "Disqualification with written report for official B from WHITE team (red and blue cards shown by the referees).",
+          "f": "Later in the match, it is possible to give a yellow card and/or a 2-minute suspension to another official from WHITE team.",
+          "g": "Yellow card, 2-minute suspension and disqualification noted in the match report.",
+          "h": "The match is restarted with a free throw for WHITE team",
+          "i": "The match is restarted with a free throw for BLACK team"
+        },
+        "correct": [
+          "c","e","f","i"
+        ]
       }
     ],
     "17": [
@@ -5746,14 +5935,16 @@
         "id": "17.3",
         "question": "BLACK 2 has committed an infraction. The court referee decides on a disqualification of BLACK 2 (red card shown by the referees) and a free throw. The goal referee decides on a 2-minute suspension for BLACK 2 and a 7-metre throw. How is BLACK 2 to be penalised, and how is the game to be continued?",
         "answers": {
-          "a": "2-minute suspension for BLACK 2",
-          "b": "Disqualification of BLACK 2 (red card shown by the referees)",
-          "c": "Free throw",
-          "d": "7-metre throw"
+          "a": "If no joint decision is reached, 2-minute suspension for BLACK 2",
+          "b": "If no joint decision is reached, disqualification of BLACK 2 (red card shown by the referees)",
+          "c": "If no joint decision is reached, free throw",
+          "d": "If no joint decision is reached, 7-metre throw",
+          "e": "The referees must try to reach a joint decision"
         },
         "correct": [
           "b",
-          "d"
+          "d",
+          "e"
         ]
       },
       {
